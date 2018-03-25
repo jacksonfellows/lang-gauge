@@ -1,14 +1,5 @@
 .grid {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
-}
-
-.symbol {
-  margin: 0 auto;
-}
-
-.word {
-  grid-row: 2;
-  margin: 0 auto;
+  display: inline-grid;
+  text-align: center;
+  margin-bottom: 20pt;
 }

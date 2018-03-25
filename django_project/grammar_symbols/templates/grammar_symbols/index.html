@@ -1,9 +1,8 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static "grammar_symbols/index.css"%}"/>
 
-<div class="grid">
 {% for word in words %}
-	<div class="symbol"><img src="{% static word.file %}" alt=""/></div>
-	<div class="word">{{ word.token }}</div>
+	<div class="grid">
+	<img src="{% static word.file %}" alt=""/><p>{{ word.token }}</p>
+	</div>
 {% endfor %}
-</div>
