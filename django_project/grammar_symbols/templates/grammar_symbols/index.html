@@ -6,7 +6,7 @@
 {% for word in words %}
 	<div class="grid">
 	<img class="symbol" src="{% static word.file %}" alt=""/>
-	<input type="text" name="{{ word.num }}" size="{{ word.token|length }}" value="{{ word.token }}" onchange="this.form.submit()"/>
+	<input class="text" type="text" name="{{ word.num }}" size="{{ word.token|length }}" value="{{ word.token }}" onchange="this.form.submit()"/>
 	</div>
 {% endfor %}
 <div class="grid">

@@ -8,8 +8,11 @@
   user-select: none;
 }
 
-.grid input {
+.text {
   border: none;
+}
+
+input {
   text-align: center;
   margin-top: 2pt;
 }
