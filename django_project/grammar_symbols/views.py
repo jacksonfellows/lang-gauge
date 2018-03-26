@@ -17,7 +17,6 @@ def index(request):
         doc = nlp('')
         
     words = [{'token': token, 'file': 'grammar_symbols/{0}.svg'.format(token.pos_)} for token in doc]
-    words.append({'token': '', 'file': ''})
     for i in range(len(words)):
         words[i]['num'] = i
     return render(request, 'grammar_symbols/index.html', {'words': words})
