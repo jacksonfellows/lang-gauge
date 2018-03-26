@@ -3,3 +3,8 @@
   text-align: center;
   margin-bottom: 20pt;
 }
+
+.symbol {
+  margin: auto;
+  user-select: none;
+}
